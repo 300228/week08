@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+  <form action="statu_process.php" method="post">
+    <div class="row">
+      <div class="col-6">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="_name" name="name" placeholder="您的姓名" required>
+          <label for="_name">Name</label>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label class="form-label">身份:</label><br/>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="status" id="faculty" value="faculty" checked>
+          <label class="form-check-label" for="faculty">教職員</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="status" id="student" value="student">
+          <label class="form-check-label" for="student">學生</label>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="dinner" id="dinner" value="dinner" checked>
+          <label class="form-check-label" for="dinner">需要晚餐</label>
+        </div>
+      </div>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Submit" />
+    <a href="index.php" class="btn btn-secondary ms-2">返回</a>
+  </form>
+</div>
+</body>
+</html>
+
+
